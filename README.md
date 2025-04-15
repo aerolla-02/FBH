@@ -1,7 +1,15 @@
-<h1>FBH - Fraud Bank of Hyderabad</h1>
-<li>Hello</li>
+# 💻 FBH - Fraud Bank of Hyderabad
 
+<h1>**FBH** is a fun web application built using Django to simulate banking operations. It supports user authentication, account transactions, and an admin interface to monitor users and manage banking functionalities.</h1>
 
+## 🚀 Features
+
+- User Registration & Login
+- Secure Session Management
+- Account Balance Tracking
+- Deposit, Withdrawal & Transfer Functions
+- Admin Dashboard
+- Clean UI with Responsive Design
 
 # TECHNOLOGIES USED 📌
 
