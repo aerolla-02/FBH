@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'assets/css/create.css' %}">
+  <form method="POST">
+    {% csrf_token %}
+    <fieldset>
+      <legend>Create Your Account</legend>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="mobile">Mobile</label>
+      <input type="number" id="mobile" name="mobile" maxlength="10"  required>
+
+      <label for="mobile">E-mail</label>
+      <input type="email" id="mobile" name="email"  required>
+      
+      <label for="aadhar">Aadhar Number:</label>
+      <input type="text" id="aadhar" name="aadhar" pattern="\d{12}" maxlength="12" placeholder="12-digit Aadhar" required>
+      
+      <label for="pan">PAN Number:</label>
+      <input type="text" id="pan" name="pan" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" maxlength="10" placeholder="ABCDE1234F" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" placeholder="Enter your full address" required></textarea>
+      
+      <button type="submit">Create</button>
+    </fieldset>
+</form>
+
+{% endblock  %}

@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{% block content %}
+{% load static%}
+<link rel="stylesheet" href="{% static 'assets/css/create.css' %}">
+<form method="POST">
+    {% csrf_token %}
+    <fieldset>
+        <legend>Transfer</legend>
+        <label for="acc">FROM ACCOUNT</label>
+        <input type="number" id="acc1" name="f_acc" required>
+        <label for="acc">TO ACCOUNT</label>
+        <input type="number" id="acc2" name="t_acc" required>
+        <label for="pin">PIN:</label>
+        <input type="password" id="pin" name="pin" maxlength="4" required>
+        <label for="amount">AMOUNT:</label>
+        <input type="number" id="amount" name="amount" required>
+        <button type="submit">Transfer</button>
+    </fieldset>
+<form>
+
+{% endblock content %}

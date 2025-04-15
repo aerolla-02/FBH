@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'assets/css/index.css' %}">
+<a href="{% url 'create' %}"><img src="{% static 'assets\images\img1.jpg' %}" alt="" class="hello"></a>
+<img src="{% static 'assets\images\img2.jpg' %}" alt=""  class="hello">
+<a href="{% url 'balance' %}"><img src="{% static 'assets\images\img3.jpg' %}" alt=""  class="hello"></a>
+<a href="{% url 'withdraw' %}"><img src="{% static 'assets\images\img4.jpg' %}" alt=""  class="hello"></a>
+<a href="{% url 'deposit' %}"><img src="{% static 'assets\images\img5.jpg' %}" alt=""  class="hello"></a>
+<a href="{% url 'transfer' %}"><img src="{% static 'assets\images\img6.jpg' %}" alt=""  class="hello"></a>
+    
+{% endblock content %} 

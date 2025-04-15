@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'assets/css/create.css' %}">
+<form method="POST">
+    {% csrf_token %}
+    <fieldset>
+            {% csrf_token %}
+            <legend>OTP</legend>
+            <label>Account Number</label>
+            <input type="number" id="" name="acc" required>
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" name="otp" required>
+            <label for="pin">PIN:</label>
+            <input type="password" id="pin" name="pin1" required>
+            <label for="pin">CONFIRM PIN:</label>        
+            <input type="password" id="pin" name="pin2" required>
+            <button type="submit">Submit</button>
+    </fieldset>
+</form>
+{% endblock content %}

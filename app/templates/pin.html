@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'assets/css/create.css' %}">
+<form method="POST">
+    {% csrf_token %}
+    <fieldset>
+        <legend>Enter Your PIN</legend>
+        <label for=''>Account Number</label>
+        <input type="number" id="" name="acc" required>
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
+{% endblock content %}
